@@ -42,37 +42,37 @@ return()=>{
   )
 }
 
-const CountdownTimer = ({ initialSeconds }) => {
-  const [secondsLeft, setSecondsLeft] = useState(0);
+// const CountdownTimer = ({ initialSeconds }) => {
+//   const [secondsLeft, setSecondsLeft] = useState(0);
 
-  useEffect(() => {
+//   useEffect(() => {
    
-    if (secondsLeft <= 0) return;
+//     if (secondsLeft <= 0) return;
 
 
-    const intervalId = setInterval(() => {
-      setSecondsLeft((prevSeconds) => prevSeconds - 1);
-    }, 1000);
+//     const intervalId = setInterval(() => {
+//       setSecondsLeft((prevSeconds) => prevSeconds - 1);
+//     }, 1000);
 
    
-    return () => clearInterval(intervalId);
-  }, [secondsLeft]); 
+//     return () => clearInterval(intervalId);
+//   }, [secondsLeft]); 
 
   
-  const formatTime = (totalSeconds) => {
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-  };
+//   const formatTime = (totalSeconds) => {
+//     const minutes = Math.floor(totalSeconds / 60);
+//     const seconds = totalSeconds % 60;
+//     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+//   };
 
-  return (
-    <div>
-      <h2>Countdown: {formatTime(secondsLeft)}</h2>
-      {secondsLeft <= 0 && <button className='mt-3'>Time's up!</button>}
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <h2>Countdown: {formatTime(secondsLeft)}</h2>
+//       {secondsLeft <= 0 && <button className='mt-3'>Time's up!</button>}
+//     </div>
+//   );
+// };
 
-// export default CountdownTimer;
-export default TimerComponent;
+export default CountdownTimer;
+// export default TimerComponent;
 // export default FetchData
