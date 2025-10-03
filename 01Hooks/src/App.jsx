@@ -6,7 +6,8 @@ import { createBrowserRouter } from 'react-router-dom'
 // import Useeffect from './components/Useeffect'
 import BMICalculator from './components/BMICalculator'
 import Loginpage from './components/loginpage'
-
+import FetchData from './components/useeffect/FetchData'
+import Counter from './components/useeffect/Counter'
 
 function App() {
   // const router = createBrowserRouter([
@@ -27,9 +28,14 @@ function App() {
     <>
    {/* <Usestate /> */}
    {/* <Useeffect /> */}
-   <BMICalculator />
+   {/* <BMICalculator /> */}
  {/* <Loginpage /> */}
-    </>
+{/* <Counter /> */}
+<FetchData /> 
+
+
+
+</>
   )
 
   // return <RouterProvider router={router}/>
