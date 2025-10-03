@@ -2,17 +2,37 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Usestate from './usestate'
+import { createBrowserRouter } from 'react-router-dom'
+// import Useeffect from './components/Useeffect'
+import BMICalculator from './components/BMICalculator'
+import Loginpage from './components/loginpage'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const router = createBrowserRouter([
+  //   {
+  //     path: 'u',
+  //     element: <Usestate />,
+  //     children:[
+  //       {
+  //         path:'/',
+  //         element: <Usestate />,
+  //       },
+  //     ]
+  //   }
+
+  // ])
 
   return (
     <>
-  <Usestate />
+   {/* <Usestate /> */}
+   {/* <Useeffect /> */}
+   <BMICalculator />
+ {/* <Loginpage /> */}
     </>
   )
+
+  // return <RouterProvider router={router}/>
 }
 
 export default App
