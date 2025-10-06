@@ -17,16 +17,6 @@ useEffect(() => {
    <button onClick={() => stecounter(counter -1)} >Decrease</button>
     </div>
 
-
-
-
-
-
-
-
-
-
-
     </>
   )
 }

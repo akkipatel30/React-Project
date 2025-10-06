@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Loginpage() {
   const [username, setUsername] = useState("");
@@ -8,6 +8,25 @@ function Loginpage() {
     e.preventDefault();
     console.log("Username:", username, "Password:", password);
   };
+
+
+// function ChatRoom () {
+
+// const [serverlUrl, setServerlUrl] = useState('https://www.bing.com/');
+
+// useEffect(() => {
+//   const connection = createConnection(serverlUrl, roomId);
+//   connection.connect();
+//   return() => {
+//     connection.disconnect();
+//   }
+// }, [serverlUrl,roomId])
+
+
+
+
+
+
 
   return (
     <div className="flex-col">
@@ -27,7 +46,9 @@ function Loginpage() {
       <button type="submit">Login</button>
     </form>
     </div>
+
+    
   );
 }
 
-export default Loginpage;
+export default Loginpage

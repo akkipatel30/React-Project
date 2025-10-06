@@ -6,8 +6,11 @@ import { createBrowserRouter } from 'react-router-dom'
 // import Useeffect from './components/Useeffect'
 import BMICalculator from './components/BMICalculator'
 import Loginpage from './components/loginpage'
-import FetchData from './components/useeffect/FetchData'
+// import FetchData from './components/useeffect/FetchData'
 import Counter from './components/useeffect/Counter'
+// import Changcolor from './components/uselayouteffect/Changcolor'
+import IndianGov from './components/usecontext/Propsdrilling/IndianGov'
+
 
 function App() {
   // const router = createBrowserRouter([
@@ -31,9 +34,9 @@ function App() {
    {/* <BMICalculator /> */}
  {/* <Loginpage /> */}
 {/* <Counter /> */}
-<FetchData /> 
-
-
+{/* <FetchData />  */}
+{/* <Changcolor /> */}
+<IndianGov />
 
 </>
   )
