@@ -4,8 +4,8 @@ import Panchayat from './Panchayat'
 const Block = () => {
   return (
     <div>
-        <h1>THis is Panchayar</h1>
-        <Block />
+        <h1>This is Panchayat Componeant </h1>
+        <Panchayat />
     </div>
   )
 }

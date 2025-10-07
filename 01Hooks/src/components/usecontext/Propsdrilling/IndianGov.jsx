@@ -4,7 +4,7 @@ import StateGov from './StateGov'
 const IndianGov = () => {
   return (
     <>
-    <h1>This is IndianGov Component</h1>
+    <h1 >This is IndianGov Component</h1>
     <StateGov />
     </>
   )

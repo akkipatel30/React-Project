@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter } from 'react-router-dom'
-// import Useeffect from './components/Useeffect'
+import Useeffect from './components/Useeffect'
 import BMICalculator from './components/BMICalculator'
 import Loginpage from './components/loginpage'
 // import FetchData from './components/useeffect/FetchData'
 import Counter from './components/useeffect/Counter'
-// import Changcolor from './components/uselayouteffect/Changcolor'
+import Changcolor from './components/uselayouteffect/Changcolor'
 import IndianGov from './components/usecontext/Propsdrilling/IndianGov'
+import Reducer from './components/usereducer/Reducer'
+// import Buttons from './components/Buttons'
 
 
 function App() {
@@ -36,8 +38,9 @@ function App() {
 {/* <Counter /> */}
 {/* <FetchData />  */}
 {/* <Changcolor /> */}
-<IndianGov />
-
+{/* <IndianGov /> */}
+{/* <Buttons /> */}
+<Reducer />
 </>
   )
 

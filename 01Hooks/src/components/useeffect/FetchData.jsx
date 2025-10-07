@@ -1,46 +1,50 @@
 import React, { useEffect, useState } from 'react'
 
-// const FetchData = () => {
+const FetchData = () => {
+
+  useEffect(() => {
+    const fetcDataFromAPI = async () => {
+      const api = await fetch('https://jsonplaceholder.typicode.com/users')
+      const result = await api.json();
+      console.log('fetching data = ', result)
+    }
+    fetcDataFromAPI();
+  }, [])
+
+
+
+// if (loading) return <p>Loading post...</p>;
+  return (
+    <div>
+<h2 className='font-medium text-2xl bg-amber-700 p-3 cursor-pointer rounded hover:bg-amber-900'>Fetc Data</h2>
+
+    </div>
+  )
+}
+
+
+// const TimerComponent = () => {
+//   const [count, setCount] = useState(0);
 
 //   useEffect(() => {
-//     const fetcDataFromAPI = async () => {
-//       const api = await fetch('https://jsonplaceholder.typicode.com/users')
-//       const result = await api.json();
-//       console.log('fetching data = ', result)
-//     }
-//     fetcDataFromAPI();
+   
+// const interval = setInterval(()=>{
+//   setCount((prev) => prev +1);
+// }, 1000 );
+
+// return()=>{
+//   clearInterval(interval);
+//   console.log('Interval cleared');
+// }
 //   }, [])
-
-
-
-// // if (loading) return <p>Loading post...</p>;
-//   return (
-//     <div>
-// <h2>Posts</h2>
-
-//     </div>
+//   return(
+//     <h1 className='text-amber-500 font-bold'>Timer : <span className='text-white font-normal'>{count}</span>  Seconds</h1>
 //   )
 // }
 
 
-const TimerComponent = () => {
-  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-   
-const interval = setInterval(()=>{
-  setCount((prev) => prev +1);
-}, 1000 );
 
-return()=>{
-  clearInterval(interval);
-  console.log('Interval cleared');
-}
-  }, [])
-  return(
-    <h1 className='text-amber-500 font-bold'>Timer : <span className='text-white font-normal'>{count}</span>  Seconds</h1>
-  )
-}
 
 // const CountdownTimer = ({ initialSeconds }) => {
 //   const [secondsLeft, setSecondsLeft] = useState(0);
@@ -75,4 +79,4 @@ return()=>{
 
 // export default CountdownTimer;
 // export default TimerComponent;
-// export default FetchData
+export default FetchData
