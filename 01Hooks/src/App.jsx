@@ -11,6 +11,9 @@ import Counter from './components/useeffect/Counter'
 import Changcolor from './components/uselayouteffect/Changcolor'
 import IndianGov from './components/usecontext/Propsdrilling/IndianGov'
 import Reducer from './components/usereducer/Reducer'
+import Usememo from './components/usememo/Usememo'
+import Index from './components/usecallback/Index'
+import Indexs from './components/UseTransition/Indexs'
 // import Buttons from './components/Buttons'
 
 
@@ -40,7 +43,11 @@ function App() {
 {/* <Changcolor /> */}
 {/* <IndianGov /> */}
 {/* <Buttons /> */}
-<Reducer />
+{/* <Reducer /> */}
+{/* <Usememo /> */}
+{/* <Usecallback /> */}
+{/* <Index /> */}
+<Indexs />
 </>
   )
 
